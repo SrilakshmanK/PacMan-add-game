@@ -1,11 +1,21 @@
-This HTML page features a Pac-Man animation moving horizontally within a container, controlled by JavaScript for direction, mouth animation, and boundary reversal, with a continuous animation loop triggered by setInterval every 100 milliseconds.
+# Pacman Game
 
-How to run the code:
-step1:Save the HTML file with .html extension.
+This project is a simple browser-based game where multiple Pacman characters are created and move around inside a container. The Pacmen bounce off the container's edges, and their animations change based on their direction of movement.
 
-step2:Click the "Go Live" button.A new browser window will open, displaying Pacman animation.
+## Features
 
-Future Improvemennt:
-consider adding obstacles or interactive elements within the container for Pac-Man to interact with, adding sound effects, or incorporating user controls for changing Pac-Man's direction and speed,enhancing the overall user experience.
+- **Add Pacman Characters**: A new Pacman character is added to the container each time the "Add Pacman" button is clicked.
+- **Pacman Movement**: Pacmen move in random directions with random velocities.
+- **Edge Collision Detection**: Pacmen bounce off the edges of the container, reversing their direction when they hit a boundary.
+- **Animation**: The appearance of the Pacmen changes depending on their direction of movement.
+  
+## How It Works
 
+### HTML Structure
 
+The HTML consists of a container `div` where the Pacman characters move. Two buttons are used to add Pacman characters and start the movement.
+
+```html
+<button onclick="create()">Add Pacman</button>
+<button onclick="move_pac()">Start Game</button>
+<div id="container"></div>
